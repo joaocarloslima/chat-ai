@@ -1,0 +1,7 @@
+/*
+ * This file has been created by the Vaadin Theme Editor. Please note that
+ * manual changes to individual CSS properties may be overwritten by the theme editor.
+ */
+@import url(https://cdn.jsdelivr.net/fontsource/css/poppins@latest/index.css);
+
+html { --lumo-font-family:Poppins; }
