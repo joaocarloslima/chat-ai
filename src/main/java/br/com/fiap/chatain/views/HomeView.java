@@ -8,7 +8,6 @@ import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.messages.MessageList;
 import com.vaadin.flow.component.messages.MessageListItem;
-import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.Scroller;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -17,14 +16,13 @@ import com.vaadin.flow.router.Route;
 
 import java.time.Instant;
 import java.util.ArrayList;
-import java.util.List;
 
 @Route("")
 public class HomeView extends VerticalLayout {
 
     private final ChatService chatService;
-    private MessageList messageList = new MessageList();
-    private TextField textField = new TextField();
+    private final MessageList messageList = new MessageList();
+    private final TextField textField = new TextField();
 
     public HomeView(ChatService chatService) {
 
